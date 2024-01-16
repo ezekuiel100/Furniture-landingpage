@@ -11,6 +11,7 @@
 
 body {
   background-color: #fff;
+  width: 100vw;
 }
 
 h1 {
@@ -97,16 +98,17 @@ section.home {
 }
 
 section.home img {
-  width: 55rem;
+  max-width: 55rem;
   object-fit: cover;
 }
 
 .hero-text {
+  width: 600px;
   display: flex;
-  padding: 15rem 9rem 15rem 22rem;
   flex-direction: column;
   justify-content: center;
   align-items: self-start;
+  margin: 0 auto;
 }
 
 .hero-text h1 {
@@ -134,6 +136,15 @@ section.home img {
 
 /* section produtcs */
 
+.products {
+  display: grid;
+  place-items: center;
+}
+
+.product-info {
+  width: 600px;
+}
+
 .brand-logo {
   display: flex;
   justify-content: center;
@@ -156,7 +167,6 @@ section.home img {
 .products h2,
 .products p {
   text-align: center;
-  padding: 0 40.62rem;
 }
 
 .product-details {
@@ -234,7 +244,7 @@ section.home img {
 /* Footer */
 
 footer {
-  padding: 100px;
+  padding: 6.5rem;
   background-color: #1a250e;
   display: flex;
   flex-direction: column;
