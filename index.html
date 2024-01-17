@@ -10,11 +10,23 @@
   <body>
     <header>
       <nav id="nav">
-        <img src="image/logo.svg" alt="" />
+        <a src="#">
+          <img src="image/logo.svg" alt="" />
+        </a>
+
+        <div class="burguer-menu">
+          <div class="burguer-menu-open">
+            <img src="image/toggle-open.svg" alt="" />
+          </div>
+          <div class="burguer-menu-close">
+            <img src="image/toggle-close.svg" alt="" />
+          </div>
+        </div>
+
         <div class="nav-links">
           <ul>
-            <li>
-              <a href="/">Home</a>
+            <li class="active">
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#products">Products</a>
@@ -26,31 +38,33 @@
               <a href="#contactus">Contact us</a>
             </li>
             <li>
-              <a href="/">Sign up</a>
+              <a href="#">Sign up</a>
             </li>
             <li>
-              <a href="/" class="button">Login</a>
+              <a href="#" class="button">Login</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="hero-text">
         <div>
-          <span>Get 50% off</span>
-          <h1
-            >We Care<br />
-            About Your Interior</h1
-          >
+          <div>
+            <span>Get 50% off</span>
+            <h1
+              >We Care<br />
+              About Your Interior</h1
+            >
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            fermentum cursus tellus, vitae elementum lectus pulvinar iaculis.
+            Pellentesque ut dui velit. Morbi bibendum maximus tristique.
+          </p>
+          <a href="" class="button">Shop Now</a>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          fermentum cursus tellus, vitae elementum lectus pulvinar iaculis.
-          Pellentesque ut dui velit. Morbi bibendum maximus tristique.
-        </p>
-        <a href="" class="button">Shop Now</a>
       </div>
 
       <img src="image/home.jpg" />
@@ -153,6 +167,7 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@4.0.0/dist/gumshoe.polyfills.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
